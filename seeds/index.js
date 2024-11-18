@@ -26,6 +26,7 @@ const seedDB = async () => {
         const price = Math.floor(Math.random() * 20) + 10;
         // console.log({ places, descriptors }); //did this because error is coming so console here
         const camp = new Campground({
+            author: '6734e35e0cb52b279e19c1ab',
             location: `${cities[random1000].city},${cities[random1000].state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
             image: `https://picsum.photos/400?random=${Math.random()}`,

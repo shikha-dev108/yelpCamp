@@ -27,7 +27,7 @@ module.exports.validateCampground = (req, res, next) => {
         throw new ExpressError(msg, 400)
     }
     else {
-        next();
+        next();  
     }
 }
 
